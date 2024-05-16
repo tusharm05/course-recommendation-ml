@@ -75,7 +75,7 @@ def main():
 	menu = ["Home","Recommend","About"]
 	choice = st.sidebar.selectbox("Menu",menu)
 
-	df = load_data(r"C:\Users\Tushar\Downloads\Streamlit_DataScience_Apps-master\course_recommendation_sys_app\data\udemy_course_data.csv")
+	df = load_data(r"./data/udemy_course_data.csv")
 
 	if choice == "Home":
 		st.subheader("Home")
